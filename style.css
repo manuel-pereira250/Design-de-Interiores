@@ -1,12 +1,13 @@
 *{
     padding: 0;
-    height: 0;
+    margin: 0;
     text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header{
-    padding: min(10vh, 4rem);
+    padding: min(5vh, 4rem);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,7 +23,7 @@ header a{
    text-decoration: none;
 }
 header button{
-    width: 7rem;
+    width: 9rem;
     height: 2.5rem;
     border-radius: 1em;
     background-color: #d5912f;
@@ -30,19 +31,53 @@ header button{
     color: white;
     margin-top: -2em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
+}
+header button:hover{
+    cursor: pointer;
 }
 .section-01{
-    padding: min(40vh, 15rem);
+    padding: min(5vh, 15rem);
     width: 100%;
     background-color: #d5912f;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.section-01 h2{
+.section-01 .div-uma{
+    display: block;
+    margin: 6em;
+    width: auto;
+    
+    
+}
+.div-uma h2{
     color: white;
-    font-size: 3em;
-    font-weight: 700;
-    margin-top: -2em;
+    font-size: 2em;
+    
+}
+.div-uma p{
+    font-size: 1.3em;
+    color: white;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+.div-uma button{
+    width: 17em;
+    height: 3em;
+    border-radius: 0.8em;
+    border-color: #d5912f;
+    
+}
+.section-01 .div-video{
+    
+
+}
+.div-video p{
+    font-size: 1.1em;
+    color: white;
+    font-weight: 900;
+}
+.div-video video{
+    width: 37em;
+    height: auto;
 }
