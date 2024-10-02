@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    height: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    padding: min(10vh, 4rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5912f;
+}
+header h1{
+    font-size: 2em;
+    color: white;
+    margin-top: -0.7em;
+}
+header a{
+   text-decoration: none;
+}
+header button{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1em;
+    background-color: #d5912f;
+    border-color: #d5912f;
+    color: white;
+    margin-top: -2em;
+    font-size: 1em;
+    font-weight: 500;
+}
+.section-01{
+    padding: min(40vh, 15rem);
+    width: 100%;
+    background-color: #d5912f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-01 h2{
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: -2em;
+}
