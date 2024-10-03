@@ -56,7 +56,7 @@ header button:hover{
     
 }
 .div-uma p{
-    font-size: 1.3em;
+    font-size: 0.8em;
     color: white;
     margin-top: 0.5em;
     margin-bottom: 1.5em;
@@ -66,11 +66,10 @@ header button:hover{
     height: 3em;
     border-radius: 0.8em;
     border-color: #d5912f;
-    
+    cursor: pointer;
 }
-.section-01 .div-video{
-    
-
+.div-uma button:hover{
+    cursor: pointer;
 }
 .div-video p{
     font-size: 1.1em;
@@ -80,4 +79,163 @@ header button:hover{
 .div-video video{
     width: 37em;
     height: auto;
+}
+.section-02{
+    padding: min(40vh, 20rem);
+    position: relative;
+    flex-wrap: wrap;
+}
+.section-02 .div-2 h2{
+    font-size: 2.3em;
+    margin-left: -6em;
+    margin-top: -5em;
+}
+.section-02 .div-2 p{
+    font-size: 1em;
+    margin-top: 2em;
+    margin-left: 9em;
+    margin-bottom: 5em;
+}
+.section-02 span{
+    opacity: 0.8;
+}
+.section-02 .div-3{
+    font-size: 1.9em;
+    display: flex;
+    margin-left: -4em;
+    width: 2em;
+    height: 15em;
+    gap: 2em;
+}
+.section-02 .div-4{
+    gap: 10em;
+    font-size: 1em;
+    display: flex;
+    margin-left: -4em;
+    margin-top: -19em;
+}
+.section-02 button{
+    width: 25em;
+    height: 3em;
+    margin-top: 8em;
+    border-radius: 1em;
+    border-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+    font-size: 1em;
+    margin-left: 13em;
+}
+.section-02 button:hover{
+    cursor: pointer;
+}
+.section-03{
+    padding: min(40vh, 10rem);
+    background-color: #d5912f;
+    color: white;
+    position: relative;
+    flex-wrap: wrap;
+}
+.section-03 .h2{
+    font-size: 3em;
+    margin-top: -2em;
+    margin-left: 6em;
+}
+.section-03 .div-pai{
+    display: flex;
+    margin-top: 3em;
+    gap: 12em;
+}
+.section-03 .div-5{
+    display: block;
+}
+.section-03 .div-5 i{
+    font-size: 4em;
+    margin-left: 2em;
+}
+.section-03 .div-5 h2{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+.section-03 .div-5 p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
+    margin-top: 3rem;
+    margin-left: 3em;
+}
+.section-03 button{
+    padding: 0.5em;
+    font-size: 1.1em;
+    margin-top: 5rem;
+    margin-left: 22em;
+    border-radius: 0.5em;
+    
+}
+.section-03 button:hover{
+    cursor: pointer;
+    border-color: white;
+    background-color: #f0ad50;
+    color: white;
+}
+.section-04{
+    padding: min(40vh, 5rem);
+    
+}
+.section-04 .div-video{
+    display: flex;
+    gap: 2em;
+}
+.section-04 .div-video img{
+    width: 18em;
+    height: 17em;
+}
+.section-04 .div-video img:hover{
+    cursor: zoom-in;
+}
+.section-04 .h2-1{
+    font-size: 3em;
+}
+.section-04 p{
+    font-size: 1em;
+    margin-top: 1em;
+}
+.section-04 h2{
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+footer{
+    background-color: #d5912f;
+    padding: min(5vh, 5rem);
+}
+footer .div-9{
+    display: flex;
+    justify-content: space-between;
+}
+footer .div-9 button{
+    background-color: green;
+    color: white;
+    width: 7em;
+    height: 3em;
+    border-radius: 1em;
+    font-size: 1em;
+    margin-right: 22em;
+}
+footer .div-9 button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #d5912f;
+    border-color: #d5912f;
+}
+footer .div-pai-2{
+    display: flex;
+    margin-top: 2em;
+    gap: 10em;
+}
+.div-8 i{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+footer i{
+    font-size: 2em;
 }
