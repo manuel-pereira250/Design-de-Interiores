@@ -36,6 +36,17 @@ header button{
 header button:hover{
     cursor: pointer;
 }
+.whatsapp{
+    position: relative;/*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+}
+.whatsapp img{
+    position: fixed;/*Mantém imagem em uma posição dixa na tela, mesmo ao rolar a página*/
+    bottom: 20px;/*Defini a distância da imagem em relação à parte inferior da tela*/
+    right: 20px;/*Define a distânci da imagem em relação à direita da tela*/
+    width: 5rem;/*Define a largura da imagem como 5 unidades de rem (relativas ao tamanho da fonte)*/
+    height: auto;/*Ajusta a altura da imagem automaticamente para manter a proporção*/
+    z-index: 999;
+}
 .section-01{
     padding: min(5vh, 15rem);
     width: 100%;
@@ -63,10 +74,11 @@ header button:hover{
 }
 .div-uma button{
     width: 17em;
-    height: 3em;
+    height: 1.8em;
     border-radius: 0.8em;
     border-color: #d5912f;
     cursor: pointer;
+    font-size: 1.1em;
 }
 .div-uma button:hover{
     cursor: pointer;
@@ -81,13 +93,14 @@ header button:hover{
     height: auto;
 }
 .section-02{
+    width: 100%;
     padding: min(40vh, 20rem);
     position: relative;
     flex-wrap: wrap;
 }
 .section-02 .div-2 h2{
-    font-size: 2.3em;
-    margin-left: -6em;
+    font-size: 1.8em;
+    margin-left: -2em;
     margin-top: -5em;
 }
 .section-02 .div-2 p{
@@ -129,6 +142,7 @@ header button:hover{
     cursor: pointer;
 }
 .section-03{
+    width: 100%;
     padding: min(40vh, 10rem);
     background-color: #d5912f;
     color: white;
@@ -150,25 +164,28 @@ header button:hover{
 }
 .section-03 .div-5 i{
     font-size: 4em;
-    margin-left: 2em;
+    margin: 0 auto;
+    
 }
 .section-03 .div-5 h2{
     margin-top: 1em;
-    margin-left: 3em;
+    margin: 0 auto;
+    margin-left: -1em;
 }
 .section-03 .div-5 p{
     font-size: 1em;
     color: white;
     font-weight: 300;
     margin-top: 3rem;
-    margin-left: 3em;
+    margin: 0 auto;
+    margin-left: -2em;
 }
 .section-03 button{
     padding: 0.5em;
     font-size: 1.1em;
     margin-top: 5rem;
     margin-left: 22em;
-    border-radius: 0.5em;
+    border-radius: 0.8em;
     
 }
 .section-03 button:hover{
@@ -179,7 +196,7 @@ header button:hover{
 }
 .section-04{
     padding: min(40vh, 5rem);
-    
+    width: 100%;
 }
 .section-04 .div-video{
     display: flex;
@@ -212,21 +229,7 @@ footer .div-9{
     display: flex;
     justify-content: space-between;
 }
-footer .div-9 button{
-    background-color: green;
-    color: white;
-    width: 7em;
-    height: 3em;
-    border-radius: 1em;
-    font-size: 1em;
-    margin-right: 22em;
-}
-footer .div-9 button:hover{
-    cursor: pointer;
-    color: black;
-    background-color: #d5912f;
-    border-color: #d5912f;
-}
+
 footer .div-pai-2{
     display: flex;
     margin-top: 2em;
@@ -239,7 +242,7 @@ footer .div-pai-2{
 footer i{
     font-size: 2em;
 }
-@media (max-width:830px){
+@media (max-width:834px){
     header{
         display: block;
         
@@ -261,7 +264,6 @@ footer i{
         margin-bottom: 2.5em;
     }
     .section-01{
-        width: 100%;
         padding: 9rem;
         display: flex;
         flex-direction: column;
@@ -270,7 +272,6 @@ footer i{
         gap: 15px;
     }
     .section-01 .div-uma h2{
-        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -278,7 +279,6 @@ footer i{
         margin-top: -6em;
     }
     .section-01 .div-uma p{
-        width: 100%;
         letter-spacing: 0.2em;
         font-size: 0.9em;
         display: flex;
@@ -292,7 +292,8 @@ footer i{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .section-01 .div-video video{
-        font-size: 0.6em;
+        width: 20rem;
+        margin: 0 2rem;
     }
     .div-video p{
         font-size: 1.3em;
@@ -302,15 +303,82 @@ footer i{
         display: block;
     }
     .section-02 .div-2 h2{
-        width: 100%;
-        font-size: 2em;
+        
+        height: auto;
+        font-size: 1.8em;
+        margin-left: -9em;
     }
     .section-02 .div-2 p{
-       width: 100%;
+       height: auto;
        font-size: 1.2em;
-        align-items: center;
-        margin-left: -8em;
+        
+       
+        margin-left: -10em;
 
     }
-    
+    .section-02 .div-pai-3{
+        display: block;
+    }
+    .section-02 .div-3{
+        
+        font-size: 0.6em;
+        margin-left: -28em;
+        
+    }
+    .section-02 .div-4{
+        font-size: 1em;
+        gap: 0;
+        gap: 2em;
+        margin-left: -15em;
+       margin-top: 0;
+    }
+    .section-02 button{
+        
+        margin-left: -20em;
+        font-size: 0.8em;
+    }
+    .section-03{
+       padding: 100%;
+    }
+    .section-03 .div-pai{
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -18em;
+    }
+    .section-03 .h2{
+        margin-left: -6em;
+       margin-top: -7em;
+        
+    }
+    .section-03 .div-5 i{
+        display: block;
+        margin: 0 auto;
+    }
+    .whatsapp img{
+        width: 3.5rem;
+    }
+    .section-03 .div-5 p{
+        font-size: 1.2em;
+        margin: 0 auto;
+        margin-left: -3em;
+    }
+    .section-04 .div-video{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .section-04 .div-video img{
+        margin-bottom: 1em;
+    }
+    footer .div-9 h2{
+        font-size: 1.5em;
+    }
+    footer .div-pai-2{
+        display: block;
+        
+    }
+    footer .div-8{
+        margin-bottom: 1.5em;
+    }
 }
