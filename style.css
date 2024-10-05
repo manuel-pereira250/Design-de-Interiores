@@ -47,31 +47,47 @@ header button:hover{
     height: auto;/*Ajusta a altura da imagem automaticamente para manter a proporção*/
     z-index: 999;
 }
+
+
+
+
 .section-01{
-    padding: min(5vh, 15rem);
+    padding: min(10vh, 5rem);
     width: 100%;
     background-color: #d5912f;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
+
+
+
+
 .section-01 .div-uma{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 6em;
     width: auto;
     
-    
 }
+
+
 .div-uma h2{
     color: white;
     font-size: 2em;
     
 }
+
+
 .div-uma p{
     font-size: 0.8em;
     color: white;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
+    margin: 1.5rem 0;
 }
+
 .div-uma button{
     width: 17em;
     height: 1.8em;
@@ -80,33 +96,41 @@ header button:hover{
     cursor: pointer;
     font-size: 1.1em;
 }
+
 .div-uma button:hover{
     cursor: pointer;
 }
+
+
 .div-video p{
     font-size: 1.1em;
     color: white;
     font-weight: 900;
 }
+
 .div-video video{
     width: 37em;
     height: auto;
 }
+
+
+
 .section-02{
     width: 100%;
     padding: min(40vh, 20rem);
     position: relative;
     flex-wrap: wrap;
 }
+
+
 .section-02 .div-2 h2{
     font-size: 1.8em;
-    margin-left: -2em;
+    margin: 0 auto;
     margin-top: -5em;
 }
 .section-02 .div-2 p{
     font-size: 1em;
-    margin-top: 2em;
-    margin-left: 9em;
+    margin: 2em 5em;
     margin-bottom: 5em;
 }
 .section-02 span{
@@ -143,7 +167,7 @@ header button:hover{
 }
 .section-03{
     width: 100%;
-    padding: min(40vh, 10rem);
+    padding: min(20vh, 10rem);
     background-color: #d5912f;
     color: white;
     position: relative;
@@ -158,6 +182,7 @@ header button:hover{
     display: flex;
     margin-top: 3em;
     gap: 12em;
+    
 }
 .section-03 .div-5{
     display: block;
@@ -201,6 +226,7 @@ header button:hover{
 .section-04 .div-video{
     display: flex;
     gap: 2em;
+    flex-wrap: wrap;
 }
 .section-04 .div-video img{
     width: 18em;
@@ -242,10 +268,25 @@ footer .div-pai-2{
 footer i{
     font-size: 2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Inicio do @media*/
 @media (max-width:834px){
     header{
         display: block;
-        
     }
     header h1{
         width: 100%;
@@ -264,12 +305,19 @@ footer i{
         margin-bottom: 2.5em;
     }
     .section-01{
-        padding: 9rem;
+        padding: 11rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        
+    }
+    .section-01 .div-video{
+        margin-left: -15em;
+        
+    }
+    .section-01 .div-uma{
+        margin-left: -10em;
     }
     .section-01 .div-uma h2{
         display: flex;
@@ -287,12 +335,13 @@ footer i{
         gap: 2em;
     }
     .div-uma button{
+        
         margin-top: 1.4em;
         font-size: 1.3em;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .section-01 .div-video video{
-        width: 20rem;
+        width: 35rem;
         margin: 0 2rem;
     }
     .div-video p{
@@ -300,76 +349,99 @@ footer i{
         margin-top: 0.4rem;
     }
     .section-02{
-        display: block;
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .section-02 .div-2 h2{
-        
-        height: auto;
-        font-size: 1.8em;
-        margin-left: -9em;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        padding: 1rem;
+        margin-left: -11em;
     }
     .section-02 .div-2 p{
-       height: auto;
-       font-size: 1.2em;
-        
+        margin-top: -1em;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 2.8rem;
+        text-align: center;
+        margin-left: -4em;
        
-        margin-left: -10em;
-
     }
     .section-02 .div-pai-3{
         display: block;
+        margin-top: -8em;
+        
     }
     .section-02 .div-3{
-        
+        margin-left: -21em;
         font-size: 0.6em;
-        margin-left: -28em;
+        padding: 1em;
+        text-align: center;
         
     }
     .section-02 .div-4{
-        font-size: 1em;
+        font-size: 1.1em;
         gap: 0;
-        gap: 2em;
-        margin-left: -15em;
-       margin-top: 0;
+        gap: 2.5em;
+        margin-left: -10.5em;
+        margin-top: -5em;
     }
     .section-02 button{
         
-        margin-left: -20em;
+        margin-left: -15em;
         font-size: 0.8em;
     }
     .section-03{
-       padding: 100%;
+        padding: min(20vh, 5rem);
+    }
+    .section-03 .h2{
+        margin-left: 0.2em;
+       margin-top: 1em;
     }
     .section-03 .div-pai{
         flex-wrap: wrap;
         flex-direction: column;
-        margin-left: -18em;
+        margin-left: 5em;
+        margin-top: 5em;
     }
-    .section-03 .h2{
-        margin-left: -6em;
-       margin-top: -7em;
-        
-    }
+
     .section-03 .div-5 i{
         display: block;
         margin: 0 auto;
+        
+    }
+    .section-03 ,.div-5 h2{
+        margin-top: 0.5em;
+    }
+    .section-03 .div-button{
+        width: 0 auto;
+        
+    }
+    .section-03 .div-button button{
+        margin-left: -18em;
     }
     .whatsapp img{
         width: 3.5rem;
     }
     .section-03 .div-5 p{
-        font-size: 1.2em;
-        margin: 0 auto;
-        margin-left: -3em;
+        font-size: 1em;
+        margin: 0 1em;
+        margin-left: -5em;
     }
-    .section-04 .div-video{
+     .section-04 .div-video{
         display: block;
         align-items: center;
         justify-content: center;
-        
+        flex-wrap: wrap;
+        flex-direction: column;
     }
+    
     .section-04 .div-video img{
         margin-bottom: 1em;
+        margin-left: em;
     }
     footer .div-9 h2{
         font-size: 1.5em;
@@ -381,4 +453,21 @@ footer i{
     footer .div-8{
         margin-bottom: 1.5em;
     }
+
+
+
+
+
+
+    @media (max-width:766px){
+        .section-01 .div-video video{
+            width: 25rem;
+            margin: 0 2rem;
+        }
+    }
+    
+     
+
+
+
 }
